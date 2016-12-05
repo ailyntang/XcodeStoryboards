@@ -21,38 +21,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcf-Hh-mon">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="328.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcf-Hh-mon">
+                                <rect key="frame" x="284" y="28" width="75" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="B">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGV-t0-NSC">
-                                <rect key="frame" x="0.0" y="336.5" width="375" height="330.5"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="B">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <segue destination="yQN-nI-QhJ" kind="show" id="CXc-L7-Ksb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hGV-t0-NSC" secondAttribute="bottom" id="DNF-b5-l0M"/>
-                            <constraint firstItem="Bcf-Hh-mon" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WnR-DT-DI3"/>
-                            <constraint firstItem="Bcf-Hh-mon" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yz7-3I-TfN"/>
-                            <constraint firstAttribute="trailing" secondItem="Bcf-Hh-mon" secondAttribute="trailing" id="d9f-qJ-lg3"/>
-                            <constraint firstAttribute="trailing" secondItem="hGV-t0-NSC" secondAttribute="trailing" id="fYH-CD-ITe"/>
-                            <constraint firstItem="hGV-t0-NSC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lkE-Nb-3Cd"/>
-                            <constraint firstItem="hGV-t0-NSC" firstAttribute="top" secondItem="Bcf-Hh-mon" secondAttribute="bottom" constant="8" id="qNB-6J-P8u"/>
-                            <constraint firstItem="hGV-t0-NSC" firstAttribute="width" secondItem="Bcf-Hh-mon" secondAttribute="width" id="qnY-bz-Z8T"/>
-                            <constraint firstItem="hGV-t0-NSC" firstAttribute="height" secondItem="Bcf-Hh-mon" secondAttribute="height" constant="2" id="zgs-bG-XFa"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+            <point key="canvasLocation" x="136.80000000000001" y="138.0809595202399"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vCj-3k-Cgs">
+            <objects>
+                <viewController id="yQN-nI-QhJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qjK-LQ-R5g"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAy-Wz-Ggd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CTo-CI-d4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-V8-vpY">
+                                <rect key="frame" x="16" y="28" width="75" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="UC3-Vd-845"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvE-ye-raa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="139"/>
         </scene>
     </scenes>
 </document>

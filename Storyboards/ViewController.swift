@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var updatedLabel: UILabel!
-    @IBOutlet weak var appName: UITextField!
+    @IBOutlet weak var myTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func didTapButton(_ sender: Any) {
-        let name = appName.text!
-        updatedLabel.text = "You selected \(name)"
+        let name = myTextField.text!
+        myLabel.text = "You selected \(name)"
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -41,6 +41,7 @@
                                     <segment title="Android"/>
                                 </segments>
                                 <connections>
+                                    <action selector="didChooseOS:" destination="BYZ-38-t0r" eventType="valueChanged" id="C8w-I2-t2r"/>
                                     <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="t8S-cI-bzf"/>
                                 </connections>
                             </segmentedControl>
@@ -80,9 +81,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="appName" destination="Xry-F1-W3M" id="pLL-g7-IXT"/>
-                        <outlet property="myLabel" destination="vot-bu-7Sb" id="dex-B7-kAf"/>
-                        <outlet property="updatedLabel" destination="77L-cJ-iKx" id="rSN-XH-bkb"/>
+                        <outlet property="iosAndroidButton" destination="ODs-Mo-99P" id="atR-DQ-tKW"/>
+                        <outlet property="myLabel" destination="77L-cJ-iKx" id="3ZH-67-pdY"/>
+                        <outlet property="myTextField" destination="Xry-F1-W3M" id="uRF-4o-7rm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

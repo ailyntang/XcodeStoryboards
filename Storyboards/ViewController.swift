@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBAction func didTapButton(_ sender: Any) {
         let name = myTextField.text!
         myLabel.text = "You selected \(name)"
+        myTextField.resignFirstResponder()
     }
 
 
@@ -26,8 +27,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func slider(_ sender: Any) {
-    }
+   
 
 
 }

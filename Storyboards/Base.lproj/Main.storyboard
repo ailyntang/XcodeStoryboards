@@ -33,18 +33,6 @@
                                     <segue destination="yQN-nI-QhJ" kind="show" id="CXc-L7-Ksb"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ODs-Mo-99P">
-                                <rect key="frame" x="16" y="113" width="125" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="iOS"/>
-                                    <segment title="Android"/>
-                                </segments>
-                                <connections>
-                                    <action selector="didChooseOS:" destination="BYZ-38-t0r" eventType="valueChanged" id="C8w-I2-t2r"/>
-                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="t8S-cI-bzf"/>
-                                </connections>
-                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-tF-ZVE">
                                 <rect key="frame" x="16" y="156" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,7 +69,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="iosAndroidButton" destination="ODs-Mo-99P" id="atR-DQ-tKW"/>
                         <outlet property="myLabel" destination="77L-cJ-iKx" id="3ZH-67-pdY"/>
                         <outlet property="myTextField" destination="Xry-F1-W3M" id="uRF-4o-7rm"/>
                     </connections>

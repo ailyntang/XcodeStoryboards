@@ -27,6 +27,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
         view.endEditing(true)
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        myTextField.resignFirstResponder()
+        return false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

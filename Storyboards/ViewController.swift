@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var myTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // myTextField.delegate = self
     }
     @IBAction func didTapButton(_ sender: Any) {
         let name = myTextField.text!
@@ -22,6 +23,9 @@ class ViewController: UIViewController {
         myTextField.resignFirstResponder()
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
